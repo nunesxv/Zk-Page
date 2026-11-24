@@ -292,8 +292,8 @@ const Hero = () => {
               {/* Interactive Product View Switcher */}
               <div className="flex items-center gap-1.5 bg-black/50 p-1 rounded-lg border border-white/5">
                 {[
-                  { id: 'booking', label: 'Autoagendamento (/:slug/agendar)', icon: Calendar },
-                  { id: 'admin', label: 'Painel Multi-Estúdio (/admin)', icon: BarChart3 },
+                  { id: 'booking', label: 'Autoagendamento Online', icon: Calendar },
+                  { id: 'admin', label: 'Painel Multi-Estúdio', icon: BarChart3 },
                   { id: 'ai', label: 'Agente IA & Retenção', icon: Bot },
                 ].map((tab) => {
                   const Icon = tab.icon;
@@ -327,10 +327,10 @@ const Hero = () => {
                   <div className="space-y-4">
                     <div className="p-4 rounded-xl bg-white/[0.03] border border-white/[0.07]">
                       <div className="flex items-center justify-between text-xs text-gray-400 mb-1">
-                        <span>Rota Pública Instantânea</span>
+                        <span>Link Público Instantâneo</span>
                         <span className="text-emerald-400 font-mono font-semibold">Zero fricção</span>
                       </div>
-                      <div className="text-xl font-display font-bold text-white">/:slug/agendar</div>
+                      <div className="text-xl font-display font-bold text-white">Agendamento Sem Cadastro</div>
                       <p className="text-xs text-gray-400 mt-1">
                         A cliente agenda em menos de 30 segundos pelo celular sem precisar baixar app ou criar senha.
                       </p>
@@ -362,7 +362,7 @@ const Hero = () => {
                         rel="noopener noreferrer"
                         className="px-3 py-1 rounded-full text-xs font-mono bg-purple-500/20 hover:bg-purple-500/30 text-purple-200 border border-purple-500/30 flex items-center gap-1 transition-colors"
                       >
-                        <span>Abrir /demo ao vivo</span>
+                        <span>Abrir Demo ao vivo</span>
                         <ArrowUpRight size={12} />
                       </a>
                     </div>
@@ -381,7 +381,7 @@ const Hero = () => {
                       <div className="p-3.5 rounded-xl bg-black/50 border border-white/10">
                         <span className="text-[11px] font-mono text-emerald-400">PASSO 3</span>
                         <h4 className="text-white font-semibold text-sm mt-1">Confirmação Automática</h4>
-                        <p className="text-gray-400 text-xs mt-1">Reserva registrada no painel /admin e lembrete anti-falta.</p>
+                        <p className="text-gray-400 text-xs mt-1">Reserva registrada no painel do estúdio e lembrete anti-falta.</p>
                       </div>
                     </div>
 
@@ -400,7 +400,7 @@ const Hero = () => {
                     <div className="w-9 h-9 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-300 mb-3">
                       <Calendar size={18} />
                     </div>
-                    <h4 className="text-white font-bold text-base mb-1">Gestão de Agenda (/admin)</h4>
+                    <h4 className="text-white font-bold text-base mb-1">Gestão de Agenda</h4>
                     <p className="text-gray-400 text-xs leading-relaxed mb-3">
                       Visão diária e semanal de atendimentos, bloqueio de horários, controle de status e histórico completo por cliente.
                     </p>
@@ -482,8 +482,8 @@ const PlatformStrip = () => {
   const highlights = [
     'SaaS Multi-Tenant Nativo',
     'Agentes Conversacionais com IA (Claude / LLMs)',
-    'Autoagendamento Sem Cadastro (/:slug/agendar)',
-    'Painel Administrativo Mobile-First (/admin)',
+    'Autoagendamento Público Sem Cadastro',
+    'Painel Administrativo Mobile-First',
     'Copiloto Financeiro & Retenção de Clientes',
     'Onboarding Inteligente por Nicho',
     'Assinatura Acessível para PMEs',
@@ -524,11 +524,11 @@ const ZykonBeautyShowcase = () => {
       desc: 'Página pública exclusiva e personalizada para cada estúdio exibir seu portfólio, serviços, valores, equipe e localização com visual premium.'
     },
     {
-      title: 'Autoagendamento Público Sem Cadastro (/:slug/agendar)',
+      title: 'Autoagendamento Público Sem Cadastro',
       desc: 'Fluxo direto onde o cliente final escolhe o serviço, seleciona o dia e horário disponível em tempo real e confirma o agendamento em segundos.'
     },
     {
-      title: 'Painel Administrativo Multi-Estúdio (/admin)',
+      title: 'Painel Administrativo Multi-Estúdio',
       desc: 'Ambiente de gestão completo com isolamento multi-tenant para controle de agenda, cadastro de serviços, horários de funcionamento e clientes.'
     },
     {
@@ -604,7 +604,7 @@ const ZykonBeautyShowcase = () => {
                 {[
                   'URL própria do estúdio com agendamento 24 horas',
                   'Zero necessidade de download de app pelo cliente final',
-                  'Painel administrativo (/admin) rápido e intuitivo',
+                  'Painel administrativo rápido e intuitivo',
                   'Arquitetura SaaS multi-tenant com dados isolados',
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm text-gray-200">
@@ -782,7 +782,7 @@ const VerticalsSuiteSection = () => {
       isLive: true,
       icon: <Calendar size={24} />,
       segment: 'Beleza, Estética & Bem-Estar',
-      desc: 'Plataforma completa para estúdios de beleza, salões, nail designers e barbearias com vitrine digital, autoagendamento público (/:slug/agendar), painel multi-estúdio (/admin) e IA de atendimento.',
+      desc: 'Plataforma completa para estúdios de beleza, salões, nail designers e barbearias com vitrine digital, autoagendamento público sem cadastro, painel administrativo multi-estúdio e IA de atendimento.',
       link: BEAUTY_URL,
       demoLink: BEAUTY_DEMO_URL,
       highlights: ['Autoagendamento 24/7', 'Gestão de Agenda & Caixa', 'Retenção Automática com IA']
@@ -1057,7 +1057,7 @@ const FAQSection = () => {
     },
     {
       q: 'Eu ou minhas clientes precisamos instalar algum aplicativo no celular?',
-      a: 'Não! O Zykon Beauty é mobile-first e funciona diretamente no navegador. Suas clientes agendam pelo link público exclusivo do seu estúdio (/:slug/agendar) sem precisar baixar aplicativo nem criar senha, e você gerencia tudo pelo painel (/admin) no celular ou computador.'
+      a: 'Não! O Zykon Beauty é mobile-first e funciona diretamente no navegador. Suas clientes agendam pelo link público exclusivo do seu estúdio sem precisar baixar aplicativo nem criar senha, e você gerencia tudo pelo painel administrativo no celular ou computador.'
     },
     {
       q: 'Meus dados e a agenda do meu negócio ficam isolados (Multi-Tenant)?',
@@ -1421,21 +1421,21 @@ const Footer = () => {
   );
 };
 
-const FloatingProductCTA = () => {
+const FloatingWhatsApp = () => {
   return (
     <a
-      href={BEAUTY_URL}
+      href={getWhatsAppUrl()}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Acessar Zykon Beauty"
+      aria-label="Falar pelo WhatsApp"
       className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 pl-4 pr-5 py-3.5 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold text-xs uppercase tracking-wider shadow-[0_10px_30px_rgba(124,58,237,0.55)] hover:scale-105 hover:shadow-[0_10px_40px_rgba(139,92,247,0.85)] transition-all duration-300 border border-purple-400/30"
     >
       <span className="relative flex h-2.5 w-2.5">
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
         <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400" />
       </span>
-      <span>Zykon Beauty</span>
-      <ArrowUpRight size={15} />
+      <Phone size={15} />
+      <span className="hidden sm:inline">Falar no WhatsApp</span>
     </a>
   );
 };
@@ -1455,7 +1455,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
-      <FloatingProductCTA />
+      <FloatingWhatsApp />
     </div>
   );
 }
